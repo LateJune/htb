@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Mar 29 16:07:43 2020 as: nmap -vv --reason -Pn -sV -p 995 "--script=banner,(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/tcp_995_pop3_nmap.txt -oX /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/xml/tcp_995_pop3_nmap.xml 10.10.10.7
+Nmap scan report for beep.localdomain (10.10.10.7)
+Host is up, received user-set (0.13s latency).
+Scanned at 2020-03-29 16:07:44 EDT for 158s
+
+PORT    STATE SERVICE REASON  VERSION
+995/tcp open  pop3    syn-ack Cyrus pop3d
+|_sslv2-drown: 
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 29 16:10:22 2020 -- 1 IP address (1 host up) scanned in 158.37 seconds

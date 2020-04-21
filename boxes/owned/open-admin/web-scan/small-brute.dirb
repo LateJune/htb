@@ -1,0 +1,19 @@
+root@kali:~/htb/boxes/open-admin/web-scan# dirb http://10.10.10.171/ /usr/share/wordlists/dirbuster/di
+rectory-list-2.3-small.txt -z 30
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Tue Jan  7 15:37:58 2020
+URL_BASE: http://10.10.10.171/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+SPEED_DELAY: 30 milliseconds
+
+-----------------
+
+GENERATED WORDS: 87580                                                         
+
+---- Scanning URL: http://10.10.10.171/ ----
+==> DIRECTORY: http://10.10.10.171/music/

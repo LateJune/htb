@@ -1,0 +1,5 @@
+Impacket v0.9.20 - Copyright 2019 SecureAuth Corporation
+
+[*] Gathering OS architecture for 1 machines
+[*] Socket connect timeout set to 2 secs
+10.10.10.175 is 64-bit

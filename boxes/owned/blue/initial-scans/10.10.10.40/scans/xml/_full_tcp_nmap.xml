@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Mar 20 16:56:24 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/_full_tcp_nmap.txt -oX /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/xml/_full_tcp_nmap.xml 10.10.10.40 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/_full_tcp_nmap.txt -oX /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/xml/_full_tcp_nmap.xml 10.10.10.40" start="1584737784" startstr="Fri Mar 20 16:56:24 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1584737784"/>
+<taskend task="NSE" time="1584737784"/>
+<taskbegin task="NSE" time="1584737784"/>
+<taskend task="NSE" time="1584737784"/>
+<taskbegin task="NSE" time="1584737784"/>
+<taskend task="NSE" time="1584737784"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1584737784"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1584737784"/>
+<taskbegin task="Connect Scan" time="1584737784"/>
+<taskend task="Connect Scan" time="1584737812" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1584737812"/>
+<taskprogress task="Service scan" time="1584737873" percent="44.44" remaining="77" etc="1584737949"/>
+<taskend task="Service scan" time="1584737878" extrainfo="9 services on 1 host"/>
+<taskbegin task="NSE" time="1584737878"/>
+<taskend task="NSE" time="1584737887"/>
+<taskbegin task="NSE" time="1584737887"/>
+<taskend task="NSE" time="1584737887"/>
+<taskbegin task="NSE" time="1584737887"/>
+<taskend task="NSE" time="1584737887"/>
+<host starttime="1584737784" endtime="1584737887"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65526">
+<extrareasons reason="conn-refused" count="65526"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows 7 Professional 7601 Service Pack 1 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="HARIS-PC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 1m19s, deviation: 1s, median: 1m18s"><elem key="count">3</elem>
+<elem key="median">78</elem>
+<elem key="stddev">1</elem>
+<elem key="mean">79</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 45616/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 12383/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 19006/udp): CLEAN (Timeout)&#xa;  Check 4 (port 29746/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_7::sp1:professional&#xa;  Computer name: haris-PC&#xa;  NetBIOS computer name: HARIS-PC\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2020-03-20T20:59:20+00:00&#xa;"><elem key="os">Windows 7 Professional 7601 Service Pack 1</elem>
+<elem key="lanmanager">Windows 7 Professional 6.1</elem>
+<elem key="server">HARIS-PC\x00</elem>
+<elem key="date">2020-03-20T20:59:20+00:00</elem>
+<elem key="fqdn">haris-PC</elem>
+<elem key="domain_dns">haris-PC</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_7::sp1:professional</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-03-20T20:59:18&#xa;  start_date: 2020-03-20T19:48:02"><elem key="date">2020-03-20T20:59:18</elem>
+<elem key="start_date">2020-03-20T19:48:02</elem>
+</script></hostscript><times srtt="20411" rttvar="126" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1584737887"/>
+<taskend task="NSE" time="1584737887"/>
+<taskbegin task="NSE" time="1584737887"/>
+<taskend task="NSE" time="1584737887"/>
+<taskbegin task="NSE" time="1584737887"/>
+<taskend task="NSE" time="1584737887"/>
+<runstats><finished time="1584737887" timestr="Fri Mar 20 16:58:07 2020" elapsed="103.28" summary="Nmap done at Fri Mar 20 16:58:07 2020; 1 IP address (1 host up) scanned in 103.28 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

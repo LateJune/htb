@@ -1,0 +1,71 @@
+# Nmap 7.80 scan initiated Fri Dec 20 09:34:44 2019 as: nmap -sV -sC --script clock-skew.nse -vv -n -T5 -p- -oN all-port.txt 10.10.10.161
+Increasing send delay for 10.10.10.161 from 0 to 5 due to 250 out of 624 dropped probes since last increase.
+Warning: 10.10.10.161 giving up on port because retransmission cap hit (2).
+adjust_timeouts2: packet supposedly had rtt of -14401393494 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401393494 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401410206 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401410206 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401404572 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401404572 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401420855 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401420855 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401397507 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401397507 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401413421 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401413421 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401424061 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401424061 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401430382 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401430382 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401551112 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401551112 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401613066 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401613066 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401567218 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401567218 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401602315 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401602315 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401607730 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401607730 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401630608 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401630608 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401683939 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401683939 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401700150 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401700150 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401561893 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401561893 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401572963 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401572963 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401591487 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401591487 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401669568 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401669568 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401689276 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401689276 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401578217 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401578217 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401618766 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401618766 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401556288 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401556288 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401583632 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401583632 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401596862 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401596862 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401624582 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401624582 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401677895 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401677895 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401705417 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401705417 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401694599 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401694599 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401710764 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -14401710764 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.161
+Host is up, received echo-reply ttl 127 (0.091s latency).
+Skipping host 10.10.10.161 due to host timeout
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 20 05:48:00 2019 -- 1 IP address (1 host up) scanned in -13604.56 seconds

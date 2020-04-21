@@ -1,0 +1,25 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-cgi-post-fuzz.txt
+START_TIME: Sat Feb 15 01:32:50 2020
+URL_BASE: http://10.10.10.14/
+WORDLIST_FILES: /usr/share/seclists/Discovery/Web-Content/CGI-HTTP-POST-Windows.fuzz.txt
+
+-----------------
+
+GENERATED WORDS: 6
+
+---- Scanning URL: http://10.10.10.14/ ----
++ http://10.10.10.14/_vti_bin/shtml.dll/_vti_rpc?method=server+version%3a4%2e0%2e2%2e2611 (CODE:200|SIZE:195)
++ http://10.10.10.14/_vti_bin/shtml.exe/_vti_rpc?method=server+version%3a4%2e0%2e2%2e2611 (CODE:200|SIZE:195)
++ http://10.10.10.14/_vti_bin/_vti_aut/author.dll?method=list+documents%3a3%2e0%2e2%2e1706&service%5fname=&listHiddenDocs=true&listExplorerDocs=true&listRecurse=false&listFiles=true&listFolders=true&listLinkInfo=true&listIncludeParent=true&listDerivedT=fals (CODE:200|SIZE:195)
++ http://10.10.10.14/_vti_bin/_vti_aut/author.exe?method=list+documents%3a3%2e0%2e2%2e1706&service%5fname=&listHiddenDocs=true&listExplorerDocs=true&listRecurse=false&listFiles=true&listFolders=true&listLinkInfo=true&listIncludeParent=true&listDerivedT=fals (CODE:200|SIZE:195)
++ http://10.10.10.14/_vti_bin/shtml.dll/_vti_rpc (CODE:200|SIZE:195)
+
+-----------------
+END_TIME: Sat Feb 15 01:32:50 2020
+DOWNLOADED: 6 - FOUND: 5

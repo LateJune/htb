@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Sat Feb  1 02:19:08 2020 as: nmap -sV -sC -p 445 --script=smb-enum-users -oN smb-enum-users.nmap -vv 10.10.10.178
+Nmap scan report for 10.10.10.178
+Host is up, received echo-reply ttl 127 (0.0087s latency).
+Scanned at 2020-02-01 02:19:09 EST for 8s
+
+PORT    STATE SERVICE       REASON          VERSION
+445/tcp open  microsoft-ds? syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Feb  1 02:19:17 2020 -- 1 IP address (1 host up) scanned in 9.07 seconds

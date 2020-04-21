@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Wed Apr 15 00:28:22 2020 as: nmap -vv --reason -Pn -sV -p 49160 "--script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/tcp_49160_oracle_nmap.txt -oX /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/xml/tcp_49160_oracle_nmap.xml 10.10.10.82
+Nmap scan report for 10.10.10.82
+Host is up, received user-set (0.10s latency).
+Scanned at 2020-04-15 00:28:23 EDT for 134s
+
+PORT      STATE SERVICE    REASON  VERSION
+49160/tcp open  oracle-tns syn-ack Oracle TNS listener (requires service name)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 15 00:30:37 2020 -- 1 IP address (1 host up) scanned in 135.54 seconds

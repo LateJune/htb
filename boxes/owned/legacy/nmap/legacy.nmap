@@ -1,0 +1,51 @@
+# Nmap 7.80 scan initiated Mon Mar 16 15:04:31 2020 as: nmap -sV -sC -oN legacy.nmap -vv -Pn 10.10.10.4
+Nmap scan report for 10.10.10.4
+Host is up, received user-set (0.017s latency).
+Scanned at 2020-03-16 15:04:31 EDT for 62s
+Not shown: 997 filtered ports
+Reason: 997 no-responses
+PORT     STATE  SERVICE       REASON       VERSION
+139/tcp  open   netbios-ssn   syn-ack      Microsoft Windows netbios-ssn
+445/tcp  open   microsoft-ds  syn-ack      Windows XP microsoft-ds
+3389/tcp closed ms-wbt-server conn-refused
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Host script results:
+|_clock-skew: mean: -3h58m43s, deviation: 1h24m51s, median: -4h58m43s
+| nbstat: NetBIOS name: LEGACY, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b9:68:30 (VMware)
+| Names:
+|   LEGACY<00>           Flags: <unique><active>
+|   HTB<00>              Flags: <group><active>
+|   LEGACY<20>           Flags: <unique><active>
+|   HTB<1e>              Flags: <group><active>
+|   HTB<1d>              Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   00 50 56 b9 68 30 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 40600/tcp): CLEAN (Timeout)
+|   Check 2 (port 36884/tcp): CLEAN (Timeout)
+|   Check 3 (port 50902/udp): CLEAN (Timeout)
+|   Check 4 (port 41279/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows XP (Windows 2000 LAN Manager)
+|   OS CPE: cpe:/o:microsoft:windows_xp::-
+|   Computer name: legacy
+|   NetBIOS computer name: LEGACY\x00
+|   Workgroup: HTB\x00
+|_  System time: 2020-03-16T18:06:00+02:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 16 15:05:33 2020 -- 1 IP address (1 host up) scanned in 62.48 seconds

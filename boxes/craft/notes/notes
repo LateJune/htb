@@ -1,0 +1,17 @@
+- https://10.10.10.110/ --> active website
+## REMEMBER WHEN SEEING URLS LIKE THIS
+### EDIT THE /etc/hosts FILE TO RESOLVE THE DNS
+* https://api.craft.htb/api
+* https://gogs.craft.htb
+	- 10.10.10.110 api.craft.htb
+	- 10.10.10.110 gogs.craft.htb
+* two active website running at these urls
+- ssh2.0 - Go on port 6022
+
+## Gogs version 0.11.86.0130 -> search repo for vuln
+* looked into change logs found potential rce
+### https://github.com/gogs/gogs/issues/5767
+### Various CSRF Tokens listed in b64
+* https://github.com/gogs/gogs/issues/5532
+
+https://blog.csdn.net/weixin_43202322/article/details/101029254#0x01_web_12

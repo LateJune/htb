@@ -1,0 +1,16 @@
+
+; <<>> DiG 9.11.16-2-Debian <<>> axfr @10.10.10.13 cronos.htb
+; (1 server found)
+;; global options: +cmd
+cronos.htb.		604800	IN	SOA	cronos.htb. admin.cronos.htb. 3 604800 86400 2419200 604800
+cronos.htb.		604800	IN	NS	ns1.cronos.htb.
+cronos.htb.		604800	IN	A	10.10.10.13
+admin.cronos.htb.	604800	IN	A	10.10.10.13
+ns1.cronos.htb.		604800	IN	A	10.10.10.13
+www.cronos.htb.		604800	IN	A	10.10.10.13
+cronos.htb.		604800	IN	SOA	cronos.htb. admin.cronos.htb. 3 604800 86400 2419200 604800
+;; Query time: 9 msec
+;; SERVER: 10.10.10.13#53(10.10.10.13)
+;; WHEN: Tue Mar 31 23:29:39 EDT 2020
+;; XFR size: 7 records (messages 1, bytes 203)
+

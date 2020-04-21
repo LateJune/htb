@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Apr 15 00:28:22 2020 as: nmap -vv -&#45;reason -Pn -sV -p 49160 &quot;-&#45;script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/tcp_49160_oracle_nmap.txt -oX /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/xml/tcp_49160_oracle_nmap.xml 10.10.10.82 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 49160 &quot;-&#45;script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/tcp_49160_oracle_nmap.txt -oX /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/xml/tcp_49160_oracle_nmap.xml 10.10.10.82" start="1586924902" startstr="Wed Apr 15 00:28:22 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="49160"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1586924903"/>
+<taskend task="NSE" time="1586924903"/>
+<taskbegin task="NSE" time="1586924903"/>
+<taskend task="NSE" time="1586924903"/>
+<taskbegin task="NSE" time="1586924903"/>
+<taskend task="NSE" time="1586924903"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586924903"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586924903"/>
+<taskbegin task="Connect Scan" time="1586924903"/>
+<taskend task="Connect Scan" time="1586924903" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1586924903"/>
+<taskend task="Service scan" time="1586925022" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1586925022"/>
+<taskend task="NSE" time="1586925037"/>
+<taskbegin task="NSE" time="1586925037"/>
+<taskend task="NSE" time="1586925037"/>
+<taskbegin task="NSE" time="1586925037"/>
+<taskend task="NSE" time="1586925037"/>
+<host starttime="1586924903" endtime="1586925037"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.82" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="49160"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="oracle-tns" product="Oracle TNS listener" extrainfo="requires service name" method="probed" conf="10"/></port>
+</ports>
+<times srtt="103786" rttvar="103786" to="518930"/>
+</host>
+<taskbegin task="NSE" time="1586925037"/>
+<taskend task="NSE" time="1586925037"/>
+<taskbegin task="NSE" time="1586925037"/>
+<taskend task="NSE" time="1586925037"/>
+<taskbegin task="NSE" time="1586925037"/>
+<taskend task="NSE" time="1586925037"/>
+<runstats><finished time="1586925037" timestr="Wed Apr 15 00:30:37 2020" elapsed="135.54" summary="Nmap done at Wed Apr 15 00:30:37 2020; 1 IP address (1 host up) scanned in 135.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

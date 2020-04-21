@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Mon Dec  2 22:47:28 2019 as: nmap -n -T5 -p1-10000 -v -oN nmap-10000-ports.txt 10.10.10.160
+Warning: 10.10.10.160 giving up on port because retransmission cap hit (2).
+Increasing send delay for 10.10.10.160 from 0 to 5 due to 977 out of 2442 dropped probes since last increase.
+Nmap scan report for 10.10.10.160
+Host is up (0.057s latency).
+Not shown: 9996 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+6379/tcp  open  redis
+10000/tcp open  snet-sensor-mgmt
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Dec  2 22:48:33 2019 -- 1 IP address (1 host up) scanned in 64.95 seconds

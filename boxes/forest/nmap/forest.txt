@@ -1,0 +1,39 @@
+# Nmap 7.80 scan initiated Thu Dec  5 13:49:07 2019 as: nmap -sV -sC -oN forest.txt -v -T4 10.10.10.161
+Increasing send delay for 10.10.10.161 from 0 to 5 due to 294 out of 734 dropped probes since last increase.
+Increasing send delay for 10.10.10.161 from 5 to 10 due to 49 out of 121 dropped probes since last increase.
+Warning: 10.10.10.161 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.161
+Host is up (0.16s latency).
+Not shown: 988 closed ports
+PORT      STATE    SERVICE      VERSION
+53/tcp    open     domain?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+88/tcp    open     kerberos-sec Microsoft Windows Kerberos (server time: 2019-12-05 19:01:37Z)
+135/tcp   open     msrpc        Microsoft Windows RPC
+139/tcp   open     netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp   open     ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp   open     microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: HTB)
+464/tcp   open     kpasswd5?
+593/tcp   open     ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp   open     tcpwrapped
+3268/tcp  open     ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp  open     tcpwrapped
+12265/tcp filtered unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=12/5%Time=5DE9523F%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03");
+Service Info: Host: FOREST; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.00: 
+|_    Message signing enabled and required
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec  5 13:59:07 2019 -- 1 IP address (1 host up) scanned in 600.52 seconds

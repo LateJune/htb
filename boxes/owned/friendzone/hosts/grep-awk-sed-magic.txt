@@ -1,0 +1,2 @@
+
+cat zonetransfer.txt | grep friendzone | grep IN | awk '{print $1}' | sed 's/\.$//g' | sort -u

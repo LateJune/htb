@@ -1,0 +1,50 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-01-27 02:20 EST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 02:20
+Completed NSE at 02:20, 0.00s elapsed
+Initiating Ping Scan at 02:20
+Scanning 10.10.10.169 [4 ports]
+Completed Ping Scan at 02:20, 0.12s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 02:20
+Scanning megabank.local (10.10.10.169) [1 port]
+Discovered open port 88/tcp on 10.10.10.169
+Completed SYN Stealth Scan at 02:20, 0.01s elapsed (1 total ports)
+NSE: Script scanning 10.10.10.169.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 02:20
+Completed NSE at 02:20, 0.05s elapsed
+Nmap scan report for megabank.local (10.10.10.169)
+Host is up, received echo-reply ttl 127 (0.11s latency).
+Scanned at 2020-01-27 02:20:19 EST for 1s
+
+PORT   STATE SERVICE      REASON
+88/tcp open  kerberos-sec syn-ack ttl 127
+| krb5-enum-users: 
+| Discovered Kerberos principals
+|     annette@megabank.local
+|     melanie@megabank.local
+|     ryan@megabank.local
+|     annika@megabank.local
+|     angela@megabank.local
+|     fred@megabank.local
+|     per@megabank.local
+|     marko@megabank.local
+|     paulo@megabank.local
+|     abigail@megabank.local
+|     Administrator@megabank.local
+|     felicia@megabank.local
+|     claude@megabank.local
+|     naoki@megabank.local
+|     gustavo@megabank.local
+|     claire@megabank.local
+|_    marcus@megabank.local
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 02:20
+Completed NSE at 02:20, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.36 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (72B)

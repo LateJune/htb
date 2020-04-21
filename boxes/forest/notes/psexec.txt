@@ -1,0 +1,7 @@
+Impacket v0.9.21-dev - Copyright 2019 SecureAuth Corporation
+
+[*] Requesting shares on 10.10.10.161.....
+[-] share 'ADMIN$' is not writable.
+[-] share 'C$' is not writable.
+[-] share 'NETLOGON' is not writable.
+[-] share 'SYSVOL' is not writable.

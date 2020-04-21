@@ -1,0 +1,30 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-friend-small.txt
+START_TIME: Sat Feb  8 12:16:28 2020
+URL_BASE: https://friendzone.red/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: https://friendzone.red/ ----
+==> DIRECTORY: https://friendzone.red/admin/
+==> DIRECTORY: https://friendzone.red/js/
+
+---- Entering directory: https://friendzone.red/admin/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: https://friendzone.red/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+-----------------
+END_TIME: Sat Feb  8 12:47:14 2020
+DOWNLOADED: 87568 - FOUND: 0

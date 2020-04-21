@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Thu Dec  5 14:43:36 2019 as: nmap -p 88 --script krb5-enum-users --script-args krb5-enum-users.realm=test -oN kerberos-nse.txt 10.10.10.161
+# Nmap done at Thu Dec  5 14:43:39 2019 -- 1 IP address (0 hosts up) scanned in 3.16 seconds

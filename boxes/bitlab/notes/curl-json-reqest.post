@@ -1,0 +1,10 @@
+curl -X POST -H Content-Type: application/json -d '{
+        payload:{
+                repo:Profile,
+                branch:master,
+                event:merge_request,
+                state:merged
+
+        }
+}
+' http://10.10.10.114/deployer/index.php

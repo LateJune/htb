@@ -1,0 +1,8 @@
+/index.html (Status: 200)
+/images (Status: 301)
+/about.html (Status: 200)
+/services.html (Status: 200)
+/assets (Status: 301)
+/README.txt (Status: 200)
+/LICENSE.txt (Status: 200)
+/server-status (Status: 403)

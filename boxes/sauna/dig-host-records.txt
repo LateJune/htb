@@ -1,0 +1,23 @@
+
+; <<>> DiG 9.11.14-3-Debian <<>> txt @10.10.10.175 EGOTISTICAL-BANK.LOCAL
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; WARNING: .local is reserved for Multicast DNS
+;; You are currently testing what happens when an mDNS query is leaked to DNS
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26326
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4000
+;; QUESTION SECTION:
+;EGOTISTICAL-BANK.LOCAL.		IN	TXT
+
+;; AUTHORITY SECTION:
+EGOTISTICAL-BANK.LOCAL.	3600	IN	SOA	sauna.EGOTISTICAL-BANK.LOCAL. hostmaster.EGOTISTICAL-BANK.LOCAL. 53 900 600 86400 3600
+
+;; Query time: 9 msec
+;; SERVER: 10.10.10.175#53(10.10.10.175)
+;; WHEN: Mon Feb 17 17:20:28 EST 2020
+;; MSG SIZE  rcvd: 104
+

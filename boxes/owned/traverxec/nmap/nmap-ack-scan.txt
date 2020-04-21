@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Dec  8 17:44:26 2019 as: nmap -p- -sA -n -oN nmap-ack-scan.txt -vv 10.10.10.165
+Nmap scan report for 10.10.10.165
+Host is up, received echo-reply ttl 63 (0.029s latency).
+Scanned at 2019-12-08 17:44:26 EST for 209s
+Not shown: 65533 filtered ports
+Reason: 65533 no-responses
+PORT   STATE      SERVICE REASON
+22/tcp unfiltered ssh     reset ttl 63
+80/tcp unfiltered http    reset ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Dec  8 17:47:55 2019 -- 1 IP address (1 host up) scanned in 209.15 seconds

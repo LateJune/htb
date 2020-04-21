@@ -1,0 +1,43 @@
+# Nmap 7.80 scan initiated Mon Jan 27 03:53:17 2020 as: nmap -sU -vv -oN udp-scan.nmap 10.10.10.169
+Increasing send delay for 10.10.10.169 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.169 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.169 from 800 to 1000 due to 11 out of 23 dropped probes since last increase.
+Nmap scan report for megabank.local (10.10.10.169)
+Host is up, received echo-reply ttl 127 (0.0091s latency).
+Scanned at 2020-01-27 03:53:17 EST for 1137s
+Not shown: 970 closed ports
+Reason: 970 port-unreaches
+PORT      STATE         SERVICE      REASON
+53/udp    open          domain       udp-response ttl 127
+88/udp    open|filtered kerberos-sec no-response
+123/udp   open          ntp          udp-response ttl 127
+137/udp   open|filtered netbios-ns   no-response
+138/udp   open|filtered netbios-dgm  no-response
+389/udp   open          ldap         udp-response ttl 127
+464/udp   open|filtered kpasswd5     no-response
+500/udp   open|filtered isakmp       no-response
+4500/udp  open|filtered nat-t-ike    no-response
+5353/udp  open|filtered zeroconf     no-response
+5355/udp  open|filtered llmnr        no-response
+49155/udp open|filtered unknown      no-response
+49170/udp open|filtered unknown      no-response
+49175/udp open|filtered unknown      no-response
+49177/udp open|filtered unknown      no-response
+49179/udp open|filtered unknown      no-response
+49185/udp open          unknown      udp-response ttl 127
+49195/udp open|filtered unknown      no-response
+49196/udp open          unknown      udp-response ttl 127
+49207/udp open|filtered unknown      no-response
+49209/udp open          unknown      udp-response ttl 127
+51456/udp open          unknown      udp-response ttl 127
+51717/udp open          unknown      udp-response ttl 127
+52225/udp open          unknown      udp-response ttl 127
+53838/udp open          unknown      udp-response ttl 127
+57409/udp open          unknown      udp-response ttl 127
+57958/udp open          unknown      udp-response ttl 127
+58631/udp open          unknown      udp-response ttl 127
+58640/udp open          unknown      udp-response ttl 127
+59765/udp open          unknown      udp-response ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jan 27 04:12:14 2020 -- 1 IP address (1 host up) scanned in 1137.00 seconds

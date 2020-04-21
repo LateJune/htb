@@ -1,0 +1,11 @@
+
+root@kali:~/htb/boxes/craft/notes# telnet 10.10.10.110 6022
+Trying 10.10.10.110...
+Connected to 10.10.10.110.
+Escape character is '^]'.
+SSH-2.0-Go
+help
+{iBl(~}a8curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1ssh-rsaMaes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128Maes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,arcfour256,arcfour128Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96Bhmac-sha2-256-etm@openssh.com,hmac-sha2-256,hmac-sha1,hmac-sha1-96nonenone}@    
+help
+Connection closed by foreign host.
+

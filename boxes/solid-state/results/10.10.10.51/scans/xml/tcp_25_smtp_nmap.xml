@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Apr 14 01:31:05 2020 as: nmap -vv -&#45;reason -Pn -sV -p 25 &quot;-&#45;script=banner,(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/tcp_25_smtp_nmap.txt -oX /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/xml/tcp_25_smtp_nmap.xml 10.10.10.51 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 25 &quot;-&#45;script=banner,(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/tcp_25_smtp_nmap.txt -oX /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/xml/tcp_25_smtp_nmap.xml 10.10.10.51" start="1586842265" startstr="Tue Apr 14 01:31:05 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="25"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1586842265"/>
+<taskend task="NSE" time="1586842265"/>
+<taskbegin task="NSE" time="1586842265"/>
+<taskend task="NSE" time="1586842265"/>
+<taskbegin task="NSE" time="1586842265"/>
+<taskend task="NSE" time="1586842265"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586842266"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586842266"/>
+<taskbegin task="Connect Scan" time="1586842266"/>
+<taskend task="Connect Scan" time="1586842266" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1586842266"/>
+<taskend task="Service scan" time="1586842266" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1586842266"/>
+<taskend task="NSE" time="1586842266"/>
+<taskbegin task="NSE" time="1586842266"/>
+<taskend task="NSE" time="1586842266"/>
+<taskbegin task="NSE" time="1586842266"/>
+<taskend task="NSE" time="1586842266"/>
+<host starttime="1586842266" endtime="1586842266"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.51" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="JAMES smtpd" version="2.3.2" hostname="solidstate" method="probed" conf="10"/><script id="banner" output="220 solidstate SMTP Server (JAMES SMTP Server 2.3.2) ready Tue,&#xa; 14 Apr 2020 01:33:50 -0400 (EDT)"/><script id="smtp-commands" output="solidstate Hello nmap.scanme.org (10.10.14.4 [10.10.14.4]), "/><script id="smtp-vuln-cve2010-4344" output="&#xa;  The SMTP server is not Exim: NOT VULNERABLE&#xa;"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="7637" rttvar="7637" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1586842266"/>
+<taskend task="NSE" time="1586842266"/>
+<taskbegin task="NSE" time="1586842266"/>
+<taskend task="NSE" time="1586842266"/>
+<taskbegin task="NSE" time="1586842266"/>
+<taskend task="NSE" time="1586842266"/>
+<runstats><finished time="1586842266" timestr="Tue Apr 14 01:31:06 2020" elapsed="1.50" summary="Nmap done at Tue Apr 14 01:31:06 2020; 1 IP address (1 host up) scanned in 1.50 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

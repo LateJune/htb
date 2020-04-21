@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Sun Mar 29 16:07:23 2020 as: nmap -vv --reason -Pn -sV -p 143 "--script=banner,(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/tcp_143_imap_nmap.txt -oX /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/xml/tcp_143_imap_nmap.xml 10.10.10.7
+Nmap scan report for beep.localdomain (10.10.10.7)
+Host is up, received user-set (0.28s latency).
+Scanned at 2020-03-29 16:07:24 EDT for 200s
+
+PORT    STATE SERVICE REASON  VERSION
+143/tcp open  imap    syn-ack Cyrus imapd 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+|_imap-capabilities: Completed OK BINARY QUOTA URLAUTHA0001 IDLE LIST-SUBSCRIBED LISTEXT CHILDREN X-NETSCAPE STARTTLS CONDSTORE THREAD=REFERENCES CATENATE MAILBOX-REFERRALS ACL NO ANNOTATEMORE IMAP4rev1 THREAD=ORDEREDSUBJECT IMAP4 SORT SORT=MODSEQ RENAME ATOMIC NAMESPACE ID MULTIAPPEND LITERAL+ UNSELECT RIGHTS=kxte UIDPLUS
+|_sslv2-drown: 
+Service Info: Host: example.com
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 29 16:10:44 2020 -- 1 IP address (1 host up) scanned in 200.75 seconds

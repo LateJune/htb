@@ -1,0 +1,396 @@
+# Nmap 7.80 scan initiated Tue Apr 14 01:31:05 2020 as: nmap -vv --reason -Pn -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/tcp_80_http_nmap.txt -oX /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/xml/tcp_80_http_nmap.xml 10.10.10.51
+Nmap scan report for 10.10.10.51
+Host is up, received user-set (0.0085s latency).
+Scanned at 2020-04-14 01:31:06 EDT for 26s
+
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.4.25 ((Debian))
+|_http-chrono: Request times for /; avg: 403.53ms; min: 289.71ms; max: 549.81ms
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.51
+|     
+|     Path: http://10.10.10.51:80/assets/js/main.js
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://10.10.10.51:80/services.html
+|     Line number: 50
+|     Comment: 
+|         <!-- Content -->
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 18
+|     Comment: 
+|         <!-- Header -->
+|     
+|     Path: http://10.10.10.51:80/assets/js/jquery.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 26
+|     Comment: 
+|         <!-- Menu -->
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 40
+|     Comment: 
+|         <!-- Banner -->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 3098
+|     Comment: 
+|         /* Banner */
+|     
+|     Path: http://10.10.10.51:80/assets/js/util.js
+|     Line number: 299
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2162
+|     Comment: 
+|         /* Image */
+|     
+|     Path: http://10.10.10.51:80/assets/js/util.js
+|     Line number: 37
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 1607
+|     Comment: 
+|         /* Basic */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 11
+|     Comment: 
+|         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 4
+|     Comment: 
+|         /*
+|         	Solid State by HTML5 UP
+|         	html5up.net | @ajlkn
+|         	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+|         */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 15
+|     Comment: 
+|         <!-- Page Wrapper -->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 3267
+|     Comment: 
+|         /* Wrapper */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2791
+|     Comment: 
+|         /* Header */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 78
+|     Comment: 
+|         <!-- Three -->
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 8
+|     Comment: 
+|         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 1644
+|     Comment: 
+|         /* Type */
+|     
+|     Path: http://10.10.10.51:80/assets/js/util.js
+|     Line number: 3
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 51
+|     Comment: 
+|         <!-- Wrapper -->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2500
+|     Comment: 
+|         /* Table */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 54
+|     Comment: 
+|         <!-- One -->
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 175
+|     Comment: 
+|         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+|     
+|     Path: http://10.10.10.51:80/assets/js/ie/html5shiv.js
+|     Line number: 1
+|     Comment: 
+|         /*
+|          HTML5 Shiv v3.6.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+|         */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 10
+|     Comment: 
+|         /* Reset */
+|     
+|     Path: http://10.10.10.51:80/assets/js/skel.min.js
+|     Line number: 1
+|     Comment: 
+|         /* skel.js v3.0.1 | (c) skel.io | MIT licensed */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 1896
+|     Comment: 
+|         /* Form */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2216
+|     Comment: 
+|         /* List */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2568
+|     Comment: 
+|         /* Button */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 170
+|     Comment: 
+|         <!-- Scripts -->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2120
+|     Comment: 
+|         /* Box */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 1890
+|     Comment: 
+|         /* Section/Article */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 59
+|     Comment: 
+|         /* Grid */
+|     
+|     Path: http://10.10.10.51:80/assets/js/jquery.scrollex.min.js
+|     Line number: 1
+|     Comment: 
+|         /* jquery.scrollex v0.2.1 | (c) @ajlkn | github.com/ajlkn/jquery.scrollex | MIT licensed */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 51
+|     Comment: 
+|         /* Box Model */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2943
+|     Comment: 
+|         /* Menu */
+|     
+|     Path: http://10.10.10.51:80/assets/js/util.js
+|     Line number: 521
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2711
+|     Comment: 
+|         /* Features */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 66
+|     Comment: 
+|         <!-- Two -->
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 3721
+|     Comment: 
+|         /* Footer */
+|     
+|     Path: http://10.10.10.51:80/assets/css/main.css
+|     Line number: 2141
+|     Comment: 
+|         /* Icon */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 90
+|     Comment: 
+|         <!-- Four -->
+|     
+|     Path: http://10.10.10.51:80/assets/js/ie/respond.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! Respond.js v1.4.2: min/max-width media query polyfill
+|          * Copyright 2014 Scott Jehl
+|          * Licensed under MIT
+|          * http://j.mp/respondjs */
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 10
+|     Comment: 
+|         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Line number: 129
+|     Comment: 
+|_        <!-- Footer -->
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.10.10.51
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.10.10.51:80/
+|     Form id: name
+|     Form action: #
+|     
+|     Path: http://10.10.10.51:80/about.html
+|     Form id: name
+|     Form action: #
+|     
+|     Path: http://10.10.10.51:80/services.html
+|     Form id: name
+|     Form action: #
+|     
+|     Path: http://10.10.10.51:80/index.html
+|     Form id: name
+|_    Form action: #
+|_http-date: Tue, 14 Apr 2020 05:33:59 GMT; +2m44s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-enum: 
+|   /README.txt: Interesting, a readme.
+|_  /images/: Potentially interesting directory w/ listing on 'apache/2.4.25 (debian)'
+|_http-errors: Couldn't find any error pages.
+|_http-exif-spider: ERROR: Script execution failed (use -d to debug)
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (1) http://10.10.10.51:80/: 
+|     (1) email: 
+|       + webadmin@solid-state-security.com
+|   (1) http://10.10.10.51:80/assets/js/: 
+|     (1) ip: 
+|_      + 10.10.10.51
+| http-headers: 
+|   Date: Tue, 14 Apr 2020 05:33:59 GMT
+|   Server: Apache/2.4.25 (Debian)
+|   Last-Modified: Sat, 23 Dec 2017 23:16:12 GMT
+|   ETag: "1e60-5610a1e7a4c9b"
+|   Accept-Ranges: bytes
+|   Content-Length: 7776
+|   Vary: Accept-Encoding
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-mobileversion-checker: No mobile version detected.
+| http-php-version: Logo query returned unknown hash 62f8e88f3376e6f5d14f236b02734cb2
+|_Credits query returned unknown hash 62f8e88f3376e6f5d14f236b02734cb2
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Apache/2.4.25 (Debian)
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; html: 3
+|     /assets/css/
+|       css: 3
+|     /assets/js/
+|       js: 5
+|     /assets/js/ie/
+|       js: 2
+|     /images/
+|       jpg: 6
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /assets/js/ie/
+|   Total files found (by extension):
+|_    Other: 1; css: 3; html: 3; jpg: 6; js: 7
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://10.10.10.51:80/assets/js/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=M%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/ie/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/ie/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/ie/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/js/ie/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.10.10.51:80/assets/?C=D%3bO%3dA%27%20OR%20sqlspider
+|_    http://10.10.10.51:80/assets/?C=M%3bO%3dA%27%20OR%20sqlspider
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Home - Solid State Security
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vhosts: 
+|_127 names had status 200
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 14 01:31:32 2020 -- 1 IP address (1 host up) scanned in 27.57 seconds

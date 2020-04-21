@@ -1,0 +1,5 @@
+/docs (Status: 302)
+/examples (Status: 302)
+/manager (Status: 302)
+/con (Status: 200)
+/RELEASE-NOTES.txt (Status: 200)

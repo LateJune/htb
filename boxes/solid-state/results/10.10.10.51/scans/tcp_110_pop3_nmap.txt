@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Tue Apr 14 01:31:05 2020 as: nmap -vv --reason -Pn -sV -p 110 "--script=banner,(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/tcp_110_pop3_nmap.txt -oX /home/jonathan/htb/boxes/solid-state/results/10.10.10.51/scans/xml/tcp_110_pop3_nmap.xml 10.10.10.51
+Nmap scan report for 10.10.10.51
+Host is up, received user-set (0.010s latency).
+Scanned at 2020-04-14 01:31:06 EDT for 11s
+
+PORT    STATE SERVICE REASON  VERSION
+110/tcp open  pop3    syn-ack JAMES pop3d 2.3.2
+|_banner: +OK solidstate POP3 server (JAMES POP3 Server 2.3.2) ready
+|_sslv2-drown: 
+Service Info: Host: solidstate
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 14 01:31:17 2020 -- 1 IP address (1 host up) scanned in 12.39 seconds

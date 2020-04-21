@@ -1,0 +1,38 @@
+# Nmap 7.80 scan initiated Sat Feb  1 16:04:04 2020 as: nmap --script=vuln -oN vuln.nmap 10.10.10.162
+Nmap scan report for staging-order.mango.htb (10.10.10.162)
+Host is up (0.010s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+80/tcp  open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=staging-order.mango.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://staging-order.mango.htb:80/
+|     Form id: 
+|_    Form action: 
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+443/tcp open  https
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=staging-order.mango.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://staging-order.mango.htb:443/
+|     Form id: 
+|_    Form action: 
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+
+# Nmap done at Sat Feb  1 16:04:37 2020 -- 1 IP address (1 host up) scanned in 32.67 seconds

@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Sun Mar 29 16:07:20 2020 as: nmap -vv --reason -Pn -sV -p 25 "--script=banner,(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/tcp_25_smtp_nmap.txt -oX /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/xml/tcp_25_smtp_nmap.xml 10.10.10.7
+Nmap scan report for beep.localdomain (10.10.10.7)
+Host is up, received user-set (0.28s latency).
+Scanned at 2020-03-29 16:07:20 EDT for 187s
+
+PORT   STATE SERVICE REASON  VERSION
+25/tcp open  smtp    syn-ack Postfix smtpd
+|_smtp-commands: beep.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+| smtp-vuln-cve2010-4344: 
+|_  The SMTP server is not Exim: NOT VULNERABLE
+|_sslv2-drown: 
+Service Info: Host:  beep.localdomain
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 29 16:10:27 2020 -- 1 IP address (1 host up) scanned in 186.93 seconds

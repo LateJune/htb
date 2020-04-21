@@ -1,0 +1,37 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-admin-medium.txt
+START_TIME: Sat Feb  8 12:21:06 2020
+URL_BASE: https://friendzone.red/admin/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+OPTION: Interactive Recursion
+
+-----------------
+
+GENERATED WORDS: 219174
+(!) WARNING: Wordlist is too large. This will take a long time to end.
+    (Use mode '-w' if you want to scan anyway)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-admin-medium.txt
+START_TIME: Sat Feb  8 12:44:18 2020
+URL_BASE: https://friendzone.red/admin/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+OPTION: Interactive Recursion
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 219174
+(!) WARNING: Wordlist is too large. This will take a long time to end.
+    (Use mode '-w' if you want to scan anyway)
+
+---- Scanning URL: https://friendzone.red/admin/ ----

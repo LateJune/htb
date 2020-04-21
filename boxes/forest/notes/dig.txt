@@ -1,0 +1,17 @@
+
+; <<>> DiG 9.11.5-P4-5.1+b1-Debian <<>> 10.10.10.161
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 19735
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.10.161.			IN	A
+
+;; Query time: 24 msec
+;; SERVER: 192.168.1.1#53(192.168.1.1)
+;; WHEN: Fri Dec 13 17:55:35 EST 2019
+;; MSG SIZE  rcvd: 41
+

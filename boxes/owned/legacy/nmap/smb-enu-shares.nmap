@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Mon Mar 16 15:09:21 2020 as: nmap --script smb-enum-shares -vv -Pn -p 445 -oN smb-enu-shares.nmap 10.10.10.4
+Nmap scan report for 10.10.10.4
+Host is up, received user-set (0.016s latency).
+Scanned at 2020-03-16 15:09:21 EDT for 18s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack
+
+Host script results:
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\10.10.10.4\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.10.10.4\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.10.10.4\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: READ
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Mar 16 15:09:39 2020 -- 1 IP address (1 host up) scanned in 18.82 seconds

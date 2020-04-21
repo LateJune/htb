@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Tue Dec 24 16:28:57 2019 as: nmap -p- -sV -sC --max-retries 2 -oN scan-all-ports.txt -v 10.10.10.110

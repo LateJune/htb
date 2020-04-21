@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Thu Dec 19 22:49:36 2019 as: nmap -T5 -n -sV -p1-6000 -v -oN nmap-1-6000.txt 10.10.10.161
+Warning: 10.10.10.161 giving up on port because retransmission cap hit (2).
+Increasing send delay for 10.10.10.161 from 0 to 5 due to 393 out of 981 dropped probes since last increase.
+Nmap scan report for 10.10.10.161
+Host is up (0.15s latency).
+Not shown: 5860 closed ports, 128 filtered ports
+PORT     STATE SERVICE      VERSION
+53/tcp   open  domain?
+88/tcp   open  kerberos-sec Microsoft Windows Kerberos (server time: 2019-12-20 03:58:42Z)
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp  open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: HTB)
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+5985/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=12/19%Time=5DFC451B%P=x86_64-pc-linux-gnu%r(DNS
+SF:VersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version
+SF:\x04bind\0\0\x10\0\x03");
+Service Info: Host: FOREST; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 19 22:53:09 2019 -- 1 IP address (1 host up) scanned in 212.76 seconds

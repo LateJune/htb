@@ -1,0 +1,31 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.9
++ Target Hostname:    10.10.10.9
++ Target Port:        80
++ Start Time:         2020-03-27 03:46:10 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Microsoft-IIS/7.5
++ Retrieved x-powered-by header: ARRAY(0x5568d71321e0)
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ Uncommon header 'x-generator' found, with contents: Drupal 7 (http://drupal.org)
++ Entry '/INSTALL.mysql.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/INSTALL.pgsql.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/INSTALL.sqlite.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/install.php' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/LICENSE.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/MAINTAINERS.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/UPGRADE.txt' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/xmlrpc.php' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/filter/tips/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/user/register/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/user/password/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/user/login/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=comment/reply/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=filter/tips/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=user/password/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=user/register/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ Entry '/?q=user/login/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ "robots.txt" contains 68 entries which should be manually viewed.
++ Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST 
++ Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST 

@@ -1,0 +1,9 @@
+{
+	"payload":{
+		"repo":"Profile",
+		"branch":"master",
+		"event":"merge_request",
+		"state":"merged"
+
+	}
+}

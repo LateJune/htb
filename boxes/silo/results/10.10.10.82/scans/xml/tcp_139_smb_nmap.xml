@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Apr 15 00:27:14 2020 as: nmap -vv -&#45;reason -Pn -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/tcp_139_smb_nmap.txt -oX /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/xml/tcp_139_smb_nmap.xml 10.10.10.82 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/tcp_139_smb_nmap.txt -oX /home/jonathan/htb/boxes/silo/results/10.10.10.82/scans/xml/tcp_139_smb_nmap.xml 10.10.10.82" start="1586924834" startstr="Wed Apr 15 00:27:14 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="139"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1586924835"/>
+<taskend task="NSE" time="1586924835"/>
+<taskbegin task="NSE" time="1586924835"/>
+<taskend task="NSE" time="1586924835"/>
+<taskbegin task="NSE" time="1586924835"/>
+<taskend task="NSE" time="1586924835"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586924835"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586924835"/>
+<taskbegin task="Connect Scan" time="1586924835"/>
+<taskend task="Connect Scan" time="1586924835" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1586924835"/>
+<taskend task="Service scan" time="1586924842" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1586924842"/>
+<taskprogress task="NSE" time="1586924873" percent="97.14" remaining="1" etc="1586924874"/>
+<taskend task="NSE" time="1586924874"/>
+<taskbegin task="NSE" time="1586924874"/>
+<taskend task="NSE" time="1586924876"/>
+<taskbegin task="NSE" time="1586924876"/>
+<taskend task="NSE" time="1586924876"/>
+<host starttime="1586924835" endtime="1586924876"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.82" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="smb-mbenum" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-print-text" output="false">false</script><script id="smb-protocols" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-061" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script><script id="smb2-security-mode" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script><script id="smb2-time" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="88169" rttvar="88169" to="440845"/>
+</host>
+<taskbegin task="NSE" time="1586924876"/>
+<taskend task="NSE" time="1586924876"/>
+<taskbegin task="NSE" time="1586924876"/>
+<taskend task="NSE" time="1586924876"/>
+<taskbegin task="NSE" time="1586924876"/>
+<taskend task="NSE" time="1586924876"/>
+<runstats><finished time="1586924876" timestr="Wed Apr 15 00:27:56 2020" elapsed="41.99" summary="Nmap done at Wed Apr 15 00:27:56 2020; 1 IP address (1 host up) scanned in 41.99 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

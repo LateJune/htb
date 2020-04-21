@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Mar 20 16:57:42 2020 as: nmap -vv -&#45;reason -Pn -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/tcp_445_smb_nmap.txt -oX /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/xml/tcp_445_smb_nmap.xml 10.10.10.40 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/tcp_445_smb_nmap.txt -oX /home/jonathan/Documents/AutoRecon/results/10.10.10.40/scans/xml/tcp_445_smb_nmap.xml 10.10.10.40" start="1584737862" startstr="Fri Mar 20 16:57:42 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1584737863"/>
+<taskend task="NSE" time="1584737863"/>
+<taskbegin task="NSE" time="1584737863"/>
+<taskend task="NSE" time="1584737863"/>
+<taskbegin task="NSE" time="1584737863"/>
+<taskend task="NSE" time="1584737863"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1584737863"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1584737863"/>
+<taskbegin task="Connect Scan" time="1584737863"/>
+<taskend task="Connect Scan" time="1584737863" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1584737863"/>
+<taskend task="Service scan" time="1584737869" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1584737869"/>
+<taskprogress task="NSE" time="1584737900" percent="94.29" remaining="2" etc="1584737902"/>
+<taskprogress task="NSE" time="1584737930" percent="97.14" remaining="2" etc="1584737932"/>
+<taskprogress task="NSE" time="1584737960" percent="97.14" remaining="3" etc="1584737963"/>
+<taskend task="NSE" time="1584737960"/>
+<taskbegin task="NSE" time="1584737960"/>

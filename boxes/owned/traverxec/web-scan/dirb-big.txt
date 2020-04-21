@@ -1,0 +1,23 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big.txt
+START_TIME: Sun Dec  8 16:29:06 2019
+URL_BASE: http://10.10.10.165:80/
+WORDLIST_FILES: /usr/share/wordlists/dirb/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.165:80/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: COULDNT CONNECT)
+
+-----------------
+END_TIME: Sun Dec  8 16:30:46 2019
+DOWNLOADED: 1328 - FOUND: 0

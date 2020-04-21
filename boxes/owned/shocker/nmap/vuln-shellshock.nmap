@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Wed Apr  1 04:03:49 2020 as: nmap -sC --script http-shellshock.nse -Pn -oN vuln-shellshock.nmap -v -p80 10.10.10.56
+Nmap scan report for 10.10.10.56
+Host is up.
+
+PORT   STATE    SERVICE
+80/tcp filtered http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Apr  1 04:03:52 2020 -- 1 IP address (1 host up) scanned in 2.22 seconds

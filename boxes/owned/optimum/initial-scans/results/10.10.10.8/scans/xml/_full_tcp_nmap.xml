@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Mar 23 17:52:37 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/jonathan/htb/boxes/optimum/initial-scans/results/10.10.10.8/scans/_full_tcp_nmap.txt -oX /home/jonathan/htb/boxes/optimum/initial-scans/results/10.10.10.8/scans/xml/_full_tcp_nmap.xml 10.10.10.8 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/jonathan/htb/boxes/optimum/initial-scans/results/10.10.10.8/scans/_full_tcp_nmap.txt -oX /home/jonathan/htb/boxes/optimum/initial-scans/results/10.10.10.8/scans/xml/_full_tcp_nmap.xml 10.10.10.8" start="1585000357" startstr="Mon Mar 23 17:52:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1585000357"/>
+<taskend task="NSE" time="1585000357"/>
+<taskbegin task="NSE" time="1585000357"/>
+<taskend task="NSE" time="1585000357"/>
+<taskbegin task="NSE" time="1585000357"/>
+<taskend task="NSE" time="1585000357"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1585000357"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1585000357"/>
+<taskbegin task="Connect Scan" time="1585000357"/>
+<taskprogress task="Connect Scan" time="1585000388" percent="13.21" remaining="204" etc="1585000592"/>
+<taskprogress task="Connect Scan" time="1585000418" percent="26.56" remaining="169" etc="1585000587"/>
+<taskprogress task="Connect Scan" time="1585000448" percent="40.64" remaining="133" etc="1585000581"/>
+<taskprogress task="Connect Scan" time="1585000478" percent="56.41" remaining="94" etc="1585000572"/>
+<taskprogress task="Connect Scan" time="1585000508" percent="82.53" remaining="32" etc="1585000540"/>
+<taskend task="Connect Scan" time="1585000525" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1585000525"/>
+<taskend task="Service scan" time="1585000531" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1585000531"/>
+<taskend task="NSE" time="1585000532"/>
+<taskbegin task="NSE" time="1585000532"/>
+<taskend task="NSE" time="1585000532"/>
+<taskbegin task="NSE" time="1585000532"/>
+<taskend task="NSE" time="1585000532"/>
+<host starttime="1585000357" endtime="1585000532"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="HttpFileServer httpd" version="2.3" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:rejetto:httpfileserver:2.3</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="HFS 2.3"><elem>HFS 2.3</elem>
+</script><script id="http-title" output="HFS /"><elem key="title">HFS /</elem>
+</script></port>
+</ports>
+<times srtt="25865" rttvar="5365" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1585000532"/>
+<taskend task="NSE" time="1585000532"/>
+<taskbegin task="NSE" time="1585000532"/>
+<taskend task="NSE" time="1585000532"/>
+<taskbegin task="NSE" time="1585000532"/>
+<taskend task="NSE" time="1585000532"/>
+<runstats><finished time="1585000532" timestr="Mon Mar 23 17:55:32 2020" elapsed="174.69" summary="Nmap done at Mon Mar 23 17:55:32 2020; 1 IP address (1 host up) scanned in 174.69 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

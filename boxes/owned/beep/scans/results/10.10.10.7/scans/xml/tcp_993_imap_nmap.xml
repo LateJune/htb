@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Mar 29 16:07:43 2020 as: nmap -vv -&#45;reason -Pn -sV -p 993 &quot;-&#45;script=banner,(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/tcp_993_imap_nmap.txt -oX /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/xml/tcp_993_imap_nmap.xml 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -sV -p 993 &quot;-&#45;script=banner,(imap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/tcp_993_imap_nmap.txt -oX /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/xml/tcp_993_imap_nmap.xml 10.10.10.7" start="1585512463" startstr="Sun Mar 29 16:07:43 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="993"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1585512463"/>
+<taskend task="NSE" time="1585512463"/>
+<taskbegin task="NSE" time="1585512463"/>
+<taskend task="NSE" time="1585512463"/>
+<taskbegin task="NSE" time="1585512463"/>
+<taskend task="NSE" time="1585512463"/>
+<taskbegin task="Connect Scan" time="1585512463"/>
+<taskend task="Connect Scan" time="1585512463" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1585512463"/>
+<taskend task="Service scan" time="1585512474" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1585512474"/>
+<taskend task="NSE" time="1585512489"/>
+<taskbegin task="NSE" time="1585512489"/>
+<taskprogress task="NSE" time="1585512520" percent="53.33" remaining="28" etc="1585512547"/>
+<taskprogress task="NSE" time="1585512550" percent="93.33" remaining="5" etc="1585512554"/>
+<taskend task="NSE" time="1585512572"/>
+<taskbegin task="NSE" time="1585512572"/>
+<taskend task="NSE" time="1585512593"/>
+<host starttime="1585512463" endtime="1585512593"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="beep.localdomain" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Cyrus imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server</cpe></service><script id="imap-capabilities" output="CAPABILITY"/><script id="ssl-ccs-injection" output="No reply from server (TIMEOUT)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<times srtt="9573" rttvar="9573" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1585512593"/>
+<taskend task="NSE" time="1585512593"/>
+<taskbegin task="NSE" time="1585512593"/>
+<taskend task="NSE" time="1585512593"/>
+<taskbegin task="NSE" time="1585512593"/>
+<taskend task="NSE" time="1585512593"/>
+<runstats><finished time="1585512593" timestr="Sun Mar 29 16:09:53 2020" elapsed="129.97" summary="Nmap done at Sun Mar 29 16:09:53 2020; 1 IP address (1 host up) scanned in 129.97 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

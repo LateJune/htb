@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Apr 13 23:20:33 2020 as: nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/jonathan/htb/boxes/unknown/results/10.10.10.60/scans/_full_tcp_nmap.txt -oX /home/jonathan/htb/boxes/unknown/results/10.10.10.60/scans/xml/_full_tcp_nmap.xml 10.10.10.60 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -A -&#45;osscan-guess -&#45;version-all -p- -oN /home/jonathan/htb/boxes/unknown/results/10.10.10.60/scans/_full_tcp_nmap.txt -oX /home/jonathan/htb/boxes/unknown/results/10.10.10.60/scans/xml/_full_tcp_nmap.xml 10.10.10.60" start="1586834433" startstr="Mon Apr 13 23:20:33 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1586834434"/>
+<taskend task="NSE" time="1586834434"/>
+<taskbegin task="NSE" time="1586834434"/>
+<taskend task="NSE" time="1586834434"/>
+<taskbegin task="NSE" time="1586834434"/>
+<taskend task="NSE" time="1586834434"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586834434"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586834434"/>
+<taskbegin task="Connect Scan" time="1586834434"/>
+<taskprogress task="Connect Scan" time="1586834465" percent="20.44" remaining="121" etc="1586834586"/>
+<taskprogress task="Connect Scan" time="1586834495" percent="48.76" remaining="65" etc="1586834559"/>
+<taskend task="Connect Scan" time="1586834547" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1586834547"/>
+<taskend task="Service scan" time="1586834561" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1586834561"/>
+<taskprogress task="NSE" time="1586834592" percent="99.63" remaining="1" etc="1586834592"/>
+<taskend task="NSE" time="1586834592"/>
+<taskbegin task="NSE" time="1586834592"/>
+<taskprogress task="NSE" time="1586834623" percent="93.75" remaining="3" etc="1586834625"/>
+<taskend task="NSE" time="1586834652"/>
+<taskbegin task="NSE" time="1586834652"/>
+<taskend task="NSE" time="1586834652"/>
+<host starttime="1586834434" endtime="1586834652"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.35" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="lighttpd/1.4.35"><elem>lighttpd/1.4.35</elem>
+</script><script id="http-title" output="Did not follow redirect to https://10.10.10.60/"><elem key="redirect_url">https://10.10.10.60/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="12041" rttvar="2213" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1586834652"/>
+<taskend task="NSE" time="1586834652"/>
+<taskbegin task="NSE" time="1586834652"/>
+<taskend task="NSE" time="1586834652"/>
+<taskbegin task="NSE" time="1586834652"/>
+<taskend task="NSE" time="1586834652"/>
+<runstats><finished time="1586834652" timestr="Mon Apr 13 23:24:12 2020" elapsed="219.54" summary="Nmap done at Mon Apr 13 23:24:12 2020; 1 IP address (1 host up) scanned in 219.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

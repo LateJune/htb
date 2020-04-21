@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Mon Apr 13 23:20:33 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /home/jonathan/htb/boxes/unknown/results/10.10.10.60/scans/_full_tcp_nmap.txt -oX /home/jonathan/htb/boxes/unknown/results/10.10.10.60/scans/xml/_full_tcp_nmap.xml 10.10.10.60
+Nmap scan report for 10.10.10.60
+Host is up, received user-set (0.012s latency).
+Scanned at 2020-04-13 23:20:34 EDT for 218s
+Not shown: 65533 filtered ports
+Reason: 65533 no-responses
+PORT    STATE SERVICE    REASON  VERSION
+80/tcp  open  http       syn-ack lighttpd 1.4.35
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+|_http-server-header: lighttpd/1.4.35
+|_http-title: Did not follow redirect to https://10.10.10.60/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+443/tcp open  ssl/https? syn-ack
+|_ssl-date: TLS randomness does not represent time
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 13 23:24:12 2020 -- 1 IP address (1 host up) scanned in 219.54 seconds

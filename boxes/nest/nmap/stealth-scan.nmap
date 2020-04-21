@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Sat Feb  1 02:20:33 2020 as: nmap -sS -T2 -Pn -n -oN stealth-scan.nmap -vv 10.10.10.178
+Nmap scan report for 10.10.10.178
+Host is up, received user-set (0.010s latency).
+Scanned at 2020-02-01 02:20:34 EST for 903s
+Not shown: 999 filtered ports
+Reason: 999 no-responses
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Feb  1 02:35:37 2020 -- 1 IP address (1 host up) scanned in 903.38 seconds

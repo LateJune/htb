@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Fri Mar 20 18:25:17 2020 as: nmap --script=vuln -oN vuln.nmap 10.10.10.5
+Nmap scan report for 10.10.10.5
+Host is up (0.017s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+80/tcp open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+# Nmap done at Fri Mar 20 18:28:01 2020 -- 1 IP address (1 host up) scanned in 164.13 seconds

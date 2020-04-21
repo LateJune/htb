@@ -1,0 +1,20 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-admin-small.txt
+START_TIME: Sat Feb  8 10:51:09 2020
+URL_BASE: https://friendzone.red/admin/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: https://friendzone.red/admin/ ----
+
+-----------------
+END_TIME: Sat Feb  8 11:06:25 2020
+DOWNLOADED: 87568 - FOUND: 0

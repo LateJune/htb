@@ -1,0 +1,46 @@
+smbmap -u melanie -p Welcome123! -H 10.10.10.169
+[+] Finding open SMB ports....
+[+] User SMB session established on 10.10.10.169...
+[+] IP: 10.10.10.169:445	Name: megabank.local                                    
+	Disk                                                  	Permissions	Comment
+	----                                                  	-----------	-------
+	ADMIN$                                            	NO ACCESS	Remote Admin
+	C$                                                	NO ACCESS	Default share
+	.                                                  
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	InitShutdown
+	fr--r--r--                5 Sun Dec 31 19:03:58 1600	lsass
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	ntsvcs
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	scerpc
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-318-0
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	epmapper
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-1b0-0
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	LSM_API_service
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	eventlog
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-398-0
+	fr--r--r--                4 Sun Dec 31 19:03:58 1600	wkssvc
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	atsvc
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-3c4-0
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-238-0
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-238-1
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-41c-0
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	RpcProxy\49676
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	8e48c806e9af94f4
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	RpcProxy\593
+	fr--r--r--                4 Sun Dec 31 19:03:58 1600	srvsvc
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	efsrpc
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	netdfs
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	vgauth-service
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-230-0
+	fr--r--r--                3 Sun Dec 31 19:03:58 1600	W32TIME_ALT
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-7f0-0
+	fr--r--r--                1 Sun Dec 31 19:03:58 1600	Winsock2\CatalogChangeListener-550-0
+	IPC$                                              	READ ONLY	Remote IPC
+	.                                                  
+	dr--r--r--                0 Wed Sep 25 09:28:35 2019	.
+	dr--r--r--                0 Wed Sep 25 09:28:35 2019	..
+	NETLOGON                                          	READ ONLY	Logon server share 
+	.                                                  
+	dr--r--r--                0 Wed Sep 25 09:28:35 2019	.
+	dr--r--r--                0 Wed Sep 25 09:28:35 2019	..
+	dr--r--r--                0 Wed Sep 25 09:28:35 2019	megabank.local
+	SYSVOL                                            	READ ONLY	Logon server share 

@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Sun Mar 29 15:55:24 2020 as: nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/_full_tcp_nmap.txt -oX /home/jonathan/htb/boxes/beep/scans/results/10.10.10.7/scans/xml/_full_tcp_nmap.xml 10.10.10.7

@@ -1,0 +1,40 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: webservices-small.dirb
+START_TIME: Wed Mar 11 00:41:25 2020
+URL_BASE: https://10.10.10.88/webservices/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: https://10.10.10.88/webservices/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: COULDNT CONNECT)
+
+-----------------
+END_TIME: Wed Mar 11 00:43:31 2020
+DOWNLOADED: 0 - FOUND: 0
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: webservices-small.dirb
+START_TIME: Wed Mar 11 00:43:51 2020
+URL_BASE: http://10.10.10.88/webservices/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+
+-----------------
+
+GENERATED WORDS: 87568
+
+---- Scanning URL: http://10.10.10.88/webservices/ ----
+==> DIRECTORY: http://10.10.10.88/webservices/wp/

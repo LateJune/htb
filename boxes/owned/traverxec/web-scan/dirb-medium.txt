@@ -1,0 +1,41 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-medium.txt
+START_TIME: Sun Dec  8 16:45:13 2019
+URL_BASE: http://10.10.10.165:80/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+
+-----------------
+
+GENERATED WORDS: 219174
+(!) WARNING: Wordlist is too large. This will take a long time to end.
+    (Use mode '-w' if you want to scan anyway)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-medium.txt
+START_TIME: Sun Dec  8 17:20:26 2019
+URL_BASE: http://10.10.10.165:80/
+WORDLIST_FILES: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 219174
+(!) WARNING: Wordlist is too large. This will take a long time to end.
+    (Use mode '-w' if you want to scan anyway)
+
+---- Scanning URL: http://10.10.10.165:80/ ----
+==> DIRECTORY: http://10.10.10.165:80/img/
+==> DIRECTORY: http://10.10.10.165:80/icons/
+==> DIRECTORY: http://10.10.10.165:80/css/
+==> DIRECTORY: http://10.10.10.165:80/lib/
+==> DIRECTORY: http://10.10.10.165:80/js/
++ http://10.10.10.165:80/%20 (CODE:501|SIZE:310)

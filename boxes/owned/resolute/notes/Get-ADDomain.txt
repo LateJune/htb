@@ -1,0 +1,34 @@
+AllowedDNSSuffixes                 : {}
+ChildDomains                       : {}
+ComputersContainer                 : CN=Computers,DC=megabank,DC=local
+DeletedObjectsContainer            : CN=Deleted Objects,DC=megabank,DC=local
+DistinguishedName                  : DC=megabank,DC=local
+DNSRoot                            : megabank.local
+DomainControllersContainer         : OU=Domain Controllers,DC=megabank,DC=local
+DomainMode                         : Windows2016Domain
+DomainSID                          : S-1-5-21-1392959593-3013219662-3596683436
+ForeignSecurityPrincipalsContainer : CN=ForeignSecurityPrincipals,DC=megabank,DC=local
+Forest                             : megabank.local
+InfrastructureMaster               : Resolute.megabank.local
+LastLogonReplicationInterval       : 
+LinkedGroupPolicyObjects           : {CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=megabank,DC=local}
+LostAndFoundContainer              : CN=LostAndFound,DC=megabank,DC=local
+ManagedBy                          : 
+Name                               : megabank
+NetBIOSName                        : MEGABANK
+ObjectClass                        : domainDNS
+ObjectGUID                         : b4e0e946-cbe7-42b7-8fa0-5c4cec2fe5aa
+ParentDomain                       : 
+PDCEmulator                        : Resolute.megabank.local
+PublicKeyRequiredPasswordRolling   : True
+QuotasContainer                    : CN=NTDS Quotas,DC=megabank,DC=local
+ReadOnlyReplicaDirectoryServers    : {}
+ReplicaDirectoryServers            : {Resolute.megabank.local}
+RIDMaster                          : Resolute.megabank.local
+SubordinateReferences              : {DC=ForestDnsZones,DC=megabank,DC=local, DC=DomainDnsZones,DC=megaba
+nk,DC=local, CN=Configuration,DC=megabank,DC=local}
+SystemsContainer                   : CN=System,DC=megabank,DC=local
+UsersContainer                     : CN=Users,DC=megabank,DC=local
+
+
+
