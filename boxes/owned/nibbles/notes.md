@@ -7,6 +7,9 @@ upon closer inspection of the website, viewing the source reveals a hidden direc
 
 running gobuster on this page immediately gets results and I notice that there is an admin.php extention
 
+```
+gobuster dir -u http://10.10.10.75/nibbleblog/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 20 -o gobuster-medium-nibblesblog.txt -x .html,.php,.txt
+```
 after a few guesses.. admin:admin, nibbles:nibbles, nibbles:nibble, `admin:nibbles` I get a login and am able to access the admin panel
 
 Username: admin
